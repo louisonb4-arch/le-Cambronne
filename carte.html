@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La carte — Le Cambronne, bistrot chic à Nantes</title>
+  <meta name="description" content="Tapas, risottos truffés, criée du jour, viandes et desserts maison — la carte du Cambronne, bistrot chic à Nantes, et sa carte des vins de la Loire aux grands crus.">
+  <link rel="canonical" href="https://www.lecambronne-bistrotchic.fr/carte.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="La carte — Le Cambronne, bistrot chic à Nantes">
+  <meta property="og:description" content="Tapas, risottos truffés, criée du jour et desserts maison. 100 % fait maison, arrivages quotidiens.">
+  <meta property="og:image" content="https://www.lecambronne-bistrotchic.fr/assets/img/table-dressage-bibliotheque.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" type="image/png" href="assets/img/le_c.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="carte.css">
+</head>
+<body class="page-carte">
+
+  <header class="nav nav--fond" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Le Cambronne — accueil">
+        <img src="assets/img/le_c.png" alt="" width="34" height="34" class="nav__c">
+        <span class="nav__name">Le&nbsp;Cambronne<em>Bistrot&nbsp;chic</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="#carte" class="actif">La carte</a>
+        <a href="#vins">Les vins</a>
+        <a href="index.html#infos">Infos</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="nav__tel" href="tel:+33240473642">02 40 47 36 42</a>
+        <a class="btn btn--rouge" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobilemenu" id="mobilemenu" aria-hidden="true">
+    <nav class="mobilemenu__links" aria-label="Menu mobile">
+      <a href="index.html"><small>·</small>Accueil</a>
+      <a href="#carte"><small>I</small>La carte</a>
+      <a href="#vins"><small>II</small>Les vins</a>
+      <a href="index.html#infos"><small>III</small>Infos pratiques</a>
+    </nav>
+    <div class="mobilemenu__foot">
+      <a class="btn btn--rouge" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver une table</a>
+      <a href="tel:+33240473642">02 40 47 36 42</a>
+      <p>6 rue de l'Héronnière, Nantes — 7 j/7</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===================== EN-TÊTE DE CARTE ===================== -->
+    <section class="carte-hero">
+      <p class="carte-hero__sur">Tout est fait maison — arrivages quotidiens</p>
+      <h1 class="carte-hero__titre">La carte</h1>
+      <p class="carte-hero__note">Les plats évoluent au fil des saisons et de la criée.<br>
+      Les plats signalés <span class="veg" aria-label="végétarien">V</span> sont végétariens.</p>
+      <nav class="carte-hero__sommaire" aria-label="Sommaire de la carte">
+        <a href="#tapas">Tapas</a>
+        <a href="#entrees">Entrées</a>
+        <a href="#risottos">Risottos</a>
+        <a href="#classiques">Classiques</a>
+        <a href="#viandes">Viandes</a>
+        <a href="#criee">La criée</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#vins" class="carte-hero__sommaire-vins">Les vins</a>
+      </nav>
+    </section>
+
+    <!-- ===================== LA CARTE ===================== -->
+    <section class="menu" id="carte">
+
+      <div class="menu__colonne">
+
+        <article class="menu__bloc reveal" id="tapas">
+          <h2><span>01</span>Tapas — à partager</h2>
+          <ul class="plats">
+            <li><div class="plats__ligne"><h3>Raviole de dorade et saumon frit</h3><span class="plats__filet"></span><p class="plats__prix">15,90&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Labneh au miso et thym <span class="veg">V</span></h3><span class="plats__filet"></span><p class="plats__prix">13,90&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Croq' foccacia truffé</h3><span class="plats__filet"></span><p class="plats__prix">15,90&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Planche d'inspiration grecque</h3><span class="plats__filet"></span><p class="plats__prix">24,90&nbsp;€</p></div></li>
+          </ul>
+        </article>
+
+        <article class="menu__bloc reveal" id="entrees">
+          <h2><span>02</span>Entrées</h2>
+          <ul class="plats">
+            <li><div class="plats__ligne"><h3>Tataki de bœuf</h3><span class="plats__filet"></span><p class="plats__prix">15,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Dorade royale grillée</h3><span class="plats__filet"></span><p class="plats__prix">17,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>La langoustine</h3><span class="plats__filet"></span><p class="plats__prix">19,90&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Tofu de lentille corail <span class="veg">V</span></h3><span class="plats__filet"></span><p class="plats__prix">14,50&nbsp;€</p></div></li>
+          </ul>
+        </article>
+
+        <article class="menu__bloc menu__bloc--signature reveal" id="risottos">
+          <h2><span>03</span>Les risottos truffés <em>— la signature</em></h2>
+          <ul class="plats">
+            <li><div class="plats__ligne"><h3>À la burrata <span class="veg">V</span></h3><span class="plats__filet"></span><p class="plats__prix">24,90&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Au jambon serrano</h3><span class="plats__filet"></span><p class="plats__prix">24,90&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Burrata &amp; jambon serrano</h3><span class="plats__filet"></span><p class="plats__prix">28,90&nbsp;€</p></div></li>
+          </ul>
+        </article>
+
+        <article class="menu__bloc reveal" id="classiques">
+          <h2><span>04</span>Les classiques</h2>
+          <ul class="plats">
+            <li><div class="plats__ligne"><h3>La salade César</h3><span class="plats__filet"></span><p class="plats__prix">23,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Tartare de bœuf exotique</h3><span class="plats__filet"></span><p class="plats__prix">23,50&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Tartare de saumon façon bibimbap</h3><span class="plats__filet"></span><p class="plats__prix">23,50&nbsp;€</p></div></li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="menu__colonne">
+
+        <article class="menu__bloc reveal" id="viandes">
+          <h2><span>05</span>Viandes</h2>
+          <ul class="plats">
+            <li><div class="plats__ligne"><h3>Le burger du Cambronne</h3><span class="plats__filet"></span><p class="plats__prix">22,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Noix d'entrecôte irlandaise <em>~250&nbsp;g</em></h3><span class="plats__filet"></span><p class="plats__prix">37,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>La volaille</h3><span class="plats__filet"></span><p class="plats__prix">25,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Filet de bœuf français</h3><span class="plats__filet"></span><p class="plats__prix">34,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Pluma ibérique</h3><span class="plats__filet"></span><p class="plats__prix">24,50&nbsp;€</p></div></li>
+          </ul>
+        </article>
+
+        <article class="menu__bloc reveal" id="criee">
+          <h2><span>06</span>La criée</h2>
+          <ul class="plats">
+            <li><div class="plats__ligne"><h3>L'encornet</h3><span class="plats__filet"></span><p class="plats__prix">26,50&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Thon mi-cuit au sésame</h3><span class="plats__filet"></span><p class="plats__prix">29,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Merlu de nos côtes</h3><span class="plats__filet"></span><p class="plats__prix">27,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Dorade en feuille de bananier</h3><span class="plats__filet"></span><p class="plats__prix">29,50&nbsp;€</p></div></li>
+          </ul>
+        </article>
+
+        <article class="menu__bloc reveal" id="desserts">
+          <h2><span>07</span>Desserts — tout maison, sorbets compris</h2>
+          <ul class="plats">
+            <li><div class="plats__ligne"><h3>Sélection de 4 fromages</h3><span class="plats__filet"></span><p class="plats__prix">14,50&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Symphonie de sorbets maison</h3><span class="plats__filet"></span><p class="plats__prix">9,50&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Le Cube</h3><span class="plats__filet"></span><p class="plats__prix">12,50&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>La framboise</h3><span class="plats__filet"></span><p class="plats__prix">13,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Le mille-feuille</h3><span class="plats__filet"></span><p class="plats__prix">13,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Pamplemousse &amp; hibiscus</h3><span class="plats__filet"></span><p class="plats__prix">12,50&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Lait ribot, citron &amp; sarrasin</h3><span class="plats__filet"></span><p class="plats__prix">12,00&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Le cookie <em>— pour 2</em></h3><span class="plats__filet"></span><p class="plats__prix">24,50&nbsp;€</p></div></li>
+            <li><div class="plats__ligne"><h3>Café ou thé gourmand</h3><span class="plats__filet"></span><p class="plats__prix">10,90&nbsp;€</p></div></li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== LES VINS ===================== -->
+    <section class="vins" id="vins">
+      <div class="vins__entete reveal">
+        <p class="acte__numero acte__numero--rouge">La cave</p>
+        <h2 class="acte__titre">Les vins<br><em>de la Loire aux grands crus</em></h2>
+        <p class="vins__note">Prix TVA et service inclus — verre 12&nbsp;cl · 50&nbsp;cl · bouteille 75&nbsp;cl.<br>Certaines références sont proposées en différents millésimes.</p>
+      </div>
+
+      <div class="vins__grille">
+
+        <article class="vins__bloc reveal">
+          <h3>Muscadets <em>— le pays du vignoble</em></h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col">Sèvre-et-Maine</th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>Sur lie — Dom. Ménard-Gaborit</td><td>7,50</td><td>21</td><td>29</td></tr>
+              <tr><td>Sur lie « Les Vignes du Bourg » — Julien Braud</td><td>—</td><td>—</td><td>33</td></tr>
+              <tr><td>Sur lie « Les Bonnets Blancs » — Dom. Bonnet-Huteau</td><td>—</td><td>—</td><td>34</td></tr>
+              <tr><td>« Clisson » — Dom. de l'Épinay</td><td>—</td><td>—</td><td>45</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Blancs de Loire</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>AOP Cheverny — La Colline aux Princes</td><td>7,50</td><td>24</td><td>39</td></tr>
+              <tr><td>Coteaux du Layon — Dumnacus Vignerons</td><td>8,50</td><td>—</td><td>34</td></tr>
+              <tr><td>Quincy — Domaine J. Rouzé</td><td>—</td><td>—</td><td>39</td></tr>
+              <tr><td>AOP Menetou-Salon — Prieuré de St-Céols</td><td>—</td><td>—</td><td>48</td></tr>
+              <tr><td>Vouvray moelleux « Nectar 1990 » — Marc Brédif</td><td>—</td><td>—</td><td>46</td></tr>
+              <tr><td>Sancerre — La Poussie</td><td>—</td><td>—</td><td>60</td></tr>
+              <tr><td>Pouilly-Fumé « Le Coteau » — Pauline Pabiot</td><td>—</td><td>—</td><td>69</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Blancs d'ailleurs</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>IGP Côtes de Gascogne — Le Tuquet</td><td>7,50</td><td>18</td><td>29</td></tr>
+              <tr><td>Chardonnay « Les Ronces » — Dom. Castelneau</td><td>8</td><td>26</td><td>36</td></tr>
+              <tr><td>Viognier — Baron d'Opia</td><td>7,50</td><td>21</td><td>35</td></tr>
+              <tr><td>Bourgogne Vézelay « Cuvée des Ducs » — Dom. Camu</td><td>8</td><td>28</td><td>43</td></tr>
+              <tr><td>Mâcon-Villages « Le Loup » — Dom. Perraud</td><td>—</td><td>—</td><td>44</td></tr>
+              <tr><td>Pouilly-Fuissé — Les Préludes</td><td>—</td><td>—</td><td>63</td></tr>
+              <tr><td>Chablis 1<sup>er</sup> cru Fourchaume — Dom. G. Vrignaud</td><td>—</td><td>—</td><td>86</td></tr>
+              <tr><td>Condrieu « Amour de Dieu » — Dom. Colombo</td><td>—</td><td>—</td><td>95</td></tr>
+              <tr><td>AOP Chassagne-Montrachet — Ph. Bouzereau</td><td>—</td><td>—</td><td>105</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Rouges de Loire</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>St-Nicolas-de-Bourgueil — W. &amp; S. Mabileau</td><td>8</td><td>18</td><td>28</td></tr>
+              <tr><td>Saumur-Champigny — Dom. Beauregard</td><td>8</td><td>23</td><td>33</td></tr>
+              <tr><td>Chinon — Marc Brédif</td><td>—</td><td>—</td><td>32</td></tr>
+              <tr><td>Cabernet franc IGP Val de Loire — S. Orieux</td><td>—</td><td>—</td><td>48</td></tr>
+              <tr><td>Sancerre — La Poussie</td><td>—</td><td>—</td><td>46</td></tr>
+              <tr><td>AOP Menetou-Salon — Prieuré de St-Céols</td><td>—</td><td>—</td><td>42</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Bordelais</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>Bordeaux « Fruit d'Automne » — Ch. Bouillerot</td><td>7,50</td><td>18</td><td>29</td></tr>
+              <tr><td>Graves — Château Peyrat</td><td>—</td><td>—</td><td>39</td></tr>
+              <tr><td>Haut-Médoc — Ch. Ramage la Batisse</td><td>—</td><td>—</td><td>68</td></tr>
+              <tr><td>Saint-Émilion — Ch. Vieux Verdot</td><td>9,50</td><td>28</td><td>48</td></tr>
+              <tr><td>Pessac-Léognan — Ch. Lafont Menaut</td><td>—</td><td>—</td><td>50</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Rhône</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>Côtes du Rhône — Dom. de La Croisette</td><td>8</td><td>21</td><td>29</td></tr>
+              <tr><td>Crozes-Hermitage — Dom. des Rémizières</td><td>10</td><td>25</td><td>48</td></tr>
+              <tr><td>Vacqueyras — Dom. de La Ganse</td><td>—</td><td>—</td><td>49</td></tr>
+              <tr><td>Saint-Joseph — Dom. Colombo</td><td>—</td><td>—</td><td>54</td></tr>
+              <tr><td>Cornas — Dom. Colombo</td><td>—</td><td>—</td><td>64</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Sud</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>St-Chinian « Les Schistes de Paul » — Clos la Rivière</td><td>8</td><td>21</td><td>31</td></tr>
+              <tr><td>Madiran « Cuvée Camy » — Dom. Laougué</td><td>—</td><td>—</td><td>39</td></tr>
+              <tr><td>Pic Saint-Loup — Le Sentier des Drailles</td><td>8</td><td>24</td><td>36</td></tr>
+              <tr><td>Bandol — Dom. de la Bégude</td><td>—</td><td>—</td><td>85</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Bourgogne &amp; Beaujolais</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>Mâcon — Château du Charnay</td><td>8,50</td><td>25</td><td>39</td></tr>
+              <tr><td>Pinot noir — Dom. Camu Frères</td><td>8,50</td><td>28</td><td>42</td></tr>
+              <tr><td>Mercurey Clos la Perrière Monopole — Ch. de Chamilly</td><td>—</td><td>—</td><td>72</td></tr>
+              <tr><td>Gevrey-Chambertin — Dom. Pernot Père &amp; Fils</td><td>—</td><td>—</td><td>90</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc reveal">
+          <h3>Rosés &amp; vins du monde</h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col"></th><th scope="col">Verre</th><th scope="col">50&nbsp;cl</th><th scope="col">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>IGP Île de Beauté — Casa Rossa</td><td>7</td><td>19</td><td>26</td></tr>
+              <tr><td>Prunelle, Côtes de Provence — Villa Vallombrosa</td><td>—</td><td>—</td><td>31</td></tr>
+              <tr><td>AOP Coteaux d'Aix — Dom. Tour Campanets</td><td>—</td><td>—</td><td>34</td></tr>
+              <tr><td>Symphonie, cru classé — Ch. Sainte-Marguerite</td><td>9,50</td><td>—</td><td>48</td></tr>
+              <tr><td>Carménère — El Grano <em>(Chili)</em></td><td>7,50</td><td>18</td><td>29</td></tr>
+              <tr><td>Puglia IGT « Lupo Meraviglia Due di Due » <em>(Italie)</em></td><td>—</td><td>—</td><td>36</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="vins__bloc vins__bloc--belle reveal">
+          <h3>La Belle Cave <em>— les flacons rétroéclairés de la rotonde</em></h3>
+          <table class="vins__table">
+            <thead><tr><th scope="col">Blancs</th><th scope="col" colspan="3">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>Chablis 1<sup>er</sup> cru « Les Forêts » 2020 — Patrick Piuze</td><td colspan="3">80</td></tr>
+              <tr><td>Saint-Aubin « La Princée » 2019 — Dom. Hubert Lamy</td><td colspan="3">60</td></tr>
+              <tr><td>Sancerre « Les Monts Damnés » 2018 — Dom. Delaporte</td><td colspan="3">60</td></tr>
+              <tr><td>Condrieu « Veauvignère » 2020 — Dom. François &amp; Fils</td><td colspan="3">90</td></tr>
+            </tbody>
+            <thead><tr><th scope="col">Rouges</th><th scope="col" colspan="3">75&nbsp;cl</th></tr></thead>
+            <tbody>
+              <tr><td>Gevrey-Chambertin 2020 — Dom. Pernot Père &amp; Fils</td><td colspan="3">90</td></tr>
+              <tr><td>Nuits-Saint-Georges 2018 — Régnard</td><td colspan="3">90</td></tr>
+              <tr><td>Échezeaux Grand Cru « Du dessus » 2008 — Cécile Tremblay</td><td colspan="3">560</td></tr>
+              <tr><td>Margaux Grand Cru 2016 — Ch. Prieuré-Lichine</td><td colspan="3">110</td></tr>
+              <tr><td>Pauillac Grand Cru 2016 — Ch. Grand-Puy Ducasse</td><td colspan="3">110</td></tr>
+              <tr><td>Pessac-Léognan Grand Cru 2015 — Ch. de Fieuzal</td><td colspan="3">120</td></tr>
+              <tr><td>Pessac-Léognan Grand Cru 2016 — Ch. Carbonnieux</td><td colspan="3">90</td></tr>
+              <tr><td>Pessac-Léognan Grand Cru 2015 — Ch. Olivier</td><td colspan="3">120</td></tr>
+              <tr><td>Pomerol Grand Cru 2017 — Ch. Taillefer</td><td colspan="3">75</td></tr>
+              <tr><td>Bandol 2019 — Domaine Tempier</td><td colspan="3">85</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="carte-cta">
+      <p class="carte-cta__phrase reveal">La suite se passe à table.</p>
+      <div class="carte-cta__actions reveal">
+        <a class="btn btn--rouge btn--grand" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver une table</a>
+        <a class="hero__lien-carte" href="index.html">Retour à l'accueil <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer--simple">
+    <div class="footer__mentions">
+      <p>© <span id="annee">2026</span> Le Cambronne — Bistrot chic · 6 rue de l'Héronnière, 44000 Nantes · <a href="tel:+33240473642">02 40 47 36 42</a></p>
+      <p class="footer__liens">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="cgv.html">Conditions générales</a>
+      </p>
+      <p class="footer__credit">Création <a href="https://vokumagency.com" target="_blank" rel="noopener">Vokum</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

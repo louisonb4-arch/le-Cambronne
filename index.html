@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Cambronne — Bistrot chic à Nantes, quartier Graslin</title>
+  <meta name="description" content="Bistrot chic au cœur du quartier Graslin, à Nantes. Cuisine bistronomique 100 % faite maison, arrivages quotidiens, belle cave. Ouvert 7 j/7 — 6 rue de l'Héronnière.">
+  <link rel="canonical" href="https://www.lecambronne-bistrotchic.fr/">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="Le Cambronne — Bistrot chic à Nantes, quartier Graslin">
+  <meta property="og:description" content="Cuisine bistronomique 100 % faite maison, à vingt mètres du Cours Cambronne. Ouvert 7 j/7.">
+  <meta property="og:url" content="https://www.lecambronne-bistrotchic.fr/">
+  <meta property="og:image" content="https://www.lecambronne-bistrotchic.fr/assets/img/salle-banc-rouge.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" type="image/png" href="assets/img/le_c.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    // Filet de sécurité : si main.js ne se charge pas, on lève le rideau quand même.
+    setTimeout(function () {
+      if (document.body && !document.body.classList.contains("intro-finie")) {
+        document.body.classList.add("intro-finie");
+        var r = document.getElementById("rideau");
+        if (r) r.classList.add("rideau--leve");
+        document.body.style.overflow = "";
+      }
+    }, 3600);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Le Cambronne — Bistrot Chic",
+    "servesCuisine": "Bistronomique, française",
+    "priceRange": "€€€",
+    "telephone": "+33240473642",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6 rue de l'Héronnière",
+      "addressLocality": "Nantes",
+      "postalCode": "44000",
+      "addressCountry": "FR"
+    },
+    "url": "https://www.lecambronne-bistrotchic.fr/",
+    "acceptsReservations": "https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "19:00", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "19:00", "closes": "23:15" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "14:30" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== RIDEAU D'OUVERTURE ===================== -->
+  <div class="rideau" id="rideau" aria-hidden="true">
+    <div class="rideau__coeur">
+      <img class="rideau__c" src="assets/img/le_c.png" alt="" width="72" height="72">
+      <p class="rideau__nom">Le Cambronne</p>
+      <span class="rideau__filet"></span>
+      <p class="rideau__sous">Bistrot chic — Nantes</p>
+    </div>
+  </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#haut" aria-label="Le Cambronne — retour en haut">
+        <img src="assets/img/le_c.png" alt="" width="34" height="34" class="nav__c">
+        <span class="nav__name">Le&nbsp;Cambronne<em>Bistrot&nbsp;chic</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#quartier">Le quartier</a>
+        <a href="#salle">La salle</a>
+        <a href="#cuisine">La cuisine</a>
+        <a href="#cave">La cave</a>
+        <a href="#infos">Infos</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="nav__tel" href="tel:+33240473642">02 40 47 36 42</a>
+        <a class="btn btn--rouge" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile plein écran -->
+  <div class="mobilemenu" id="mobilemenu" aria-hidden="true">
+    <nav class="mobilemenu__links" aria-label="Menu mobile">
+      <a href="#quartier"><small>I</small>Le quartier</a>
+      <a href="#salle"><small>II</small>La salle</a>
+      <a href="#cuisine"><small>III</small>La cuisine</a>
+      <a href="#cave"><small>IV</small>La cave</a>
+      <a href="#terrasse"><small>V</small>La terrasse</a>
+      <a href="#infos"><small>VI</small>Infos pratiques</a>
+    </nav>
+    <div class="mobilemenu__foot">
+      <a class="btn btn--rouge" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver une table</a>
+      <a href="tel:+33240473642">02 40 47 36 42</a>
+      <p>6 rue de l'Héronnière, Nantes — 7 j/7</p>
+    </div>
+  </div>
+
+  <main id="haut">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <figure class="hero__media">
+        <img src="assets/img/salle-banc-rouge.jpg" alt="La salle du Cambronne : banc de velours rouge, carreaux de ciment et suspensions cuivrées" fetchpriority="high" width="2200" height="1466">
+      </figure>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <p class="hero__vertical" aria-hidden="true">Nantes — Quartier Graslin</p>
+
+      <div class="hero__content">
+        <p class="hero__sur">Bistrot chic · depuis le cœur du XIX<sup>e</sup> nantais</p>
+        <h1 class="hero__title">
+          <span class="hero__line">Le</span>
+          <span class="hero__line hero__line--big">Cambronne</span>
+        </h1>
+        <p class="hero__pitch">Cuisine bistronomique, velours rouge et charbon,<br class="br-desktop">
+        à vingt mètres du Cours Cambronne.</p>
+        <div class="hero__cta">
+          <a class="btn btn--rouge btn--grand" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver une table</a>
+          <a class="hero__lien-carte" href="carte.html">Consulter la carte <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero__bandeau">
+        <p><strong>Ouvert 7 j/7</strong> — midi &amp; soir</p>
+        <p>6 rue de l'Héronnière, 44000 Nantes</p>
+        <p><a href="tel:+33240473642">02 40 47 36 42</a></p>
+        <p class="hero__bandeau-fm">100&nbsp;% fait maison</p>
+      </div>
+    </section>
+
+    <!-- ===================== ACTE I — LE QUARTIER ===================== -->
+    <section class="acte acte--ivoire" id="quartier">
+      <div class="acte__entete reveal">
+        <p class="acte__numero">Acte I</p>
+        <h2 class="acte__titre">Le quartier<br><em>Graslin, côté coulisses</em></h2>
+      </div>
+
+      <div class="quartier__grille">
+        <div class="quartier__texte reveal">
+          <p class="lettrine">À l'angle des rues Piron et de l'Héronnière, le Cambronne occupe l'un des carrefours les plus discrets — et les mieux placés — de Nantes. Le Théâtre Graslin, la brasserie La Cigale et le Cours Cambronne dessinent autour de lui le triangle des monuments du XIX<sup>e</sup> nantais.</p>
+          <p>Vingt mètres séparent la salle des tilleuls du Cours. Assez pour être au calme, assez peu pour arriver à pied de partout : on sort du théâtre, on traverse, on est à table.</p>
+          <ul class="quartier__reperes">
+            <li><span>20&nbsp;m</span>du Cours Cambronne</li>
+            <li><span>3&nbsp;min</span>du Théâtre Graslin</li>
+            <li><span>5&nbsp;min</span>de la place Royale</li>
+          </ul>
+        </div>
+        <figure class="quartier__photo quartier__photo--une reveal-img">
+          <img src="assets/img/salle-fauteuil-rouge-portrait.jpg" alt="Fauteuil de velours rouge au premier plan, grande tablée dans la salle du Cambronne" loading="lazy" width="1651" height="2200">
+          <figcaption>La grande tablée, côté rue Piron</figcaption>
+        </figure>
+        <div class="ph ph--43 quartier__ph reveal">
+          <img class="ph__c" src="assets/img/le_c.png" alt="" aria-hidden="true">
+          <p class="ph__label">Photo à venir</p>
+          <p class="ph__sujet">La façade, angle Piron × Héronnière</p>
+        </div>
+        <figure class="quartier__photo quartier__photo--deux reveal-img">
+          <img src="assets/img/suspensions-cuivre.jpg" alt="Suspensions cuivrées et lustre de la salle" loading="lazy" width="2200" height="1466">
+          <figcaption>Cuivre &amp; cristal</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== ACTE II — LA SALLE ===================== -->
+    <section class="acte acte--charbon" id="salle">
+      <div class="acte__entete reveal">
+        <p class="acte__numero acte__numero--rouge">Acte II</p>
+        <h2 class="acte__titre">La salle<br><em>velours, cuivre &amp; charbon</em></h2>
+      </div>
+
+      <div class="salle__intro reveal">
+        <p>Murs charbon, fauteuils à oreilles en velours rouge, suspensions de cuivre, bibliothèque rétroéclairée et carreaux de ciment : la salle a été pensée comme un salon de théâtre. On y dîne en tête-à-tête près du feu, en bande sur la grande tablée, ou en cercle sous le lustre de la rotonde.</p>
+      </div>
+
+      <div class="salle__collage">
+        <figure class="salle__img salle__img--a reveal-img">
+          <img src="assets/img/salon-fauteuils-rouges.jpg" alt="Quatre fauteuils à oreilles en velours rouge autour d'une table dressée" loading="lazy" width="2200" height="1466">
+          <figcaption>Le salon rouge — 4 couverts</figcaption>
+        </figure>
+        <figure class="salle__img salle__img--b reveal-img">
+          <img src="assets/img/bibliotheque-salle.jpg" alt="Bibliothèque rétroéclairée et coussins jaunes dans la salle" loading="lazy" width="2200" height="1466">
+          <figcaption>La bibliothèque</figcaption>
+        </figure>
+        <figure class="salle__img salle__img--c reveal-img">
+          <img src="assets/img/rotonde-lustre.jpg" alt="Banquette en rotonde sous un lustre de cristal, cave à vins rétroéclairée en fond" loading="lazy" width="2200" height="1466">
+          <figcaption>La rotonde — sous le lustre</figcaption>
+        </figure>
+        <figure class="salle__img salle__img--d reveal-img">
+          <img src="assets/img/fauteuils-jaunes-feu.jpg" alt="Deux fauteuils jaunes face à la cheminée" loading="lazy" width="2200" height="1466">
+          <figcaption>Près du feu — 2 couverts</figcaption>
+        </figure>
+        <figure class="salle__img salle__img--e reveal-img">
+          <img src="assets/img/salle-perspective.jpg" alt="Perspective de la salle : miroirs, mur de cuivre, rideau rouge et tables dressées" loading="lazy" width="1651" height="2200">
+          <figcaption>La salle en enfilade, côté miroirs</figcaption>
+        </figure>
+      </div>
+
+      <blockquote class="salle__mot reveal">
+        <p>« Une adresse du centre-ville qui allie <em>raffinement</em> et <em>décontraction</em>. »</p>
+      </blockquote>
+    </section>
+
+    <!-- ===================== ACTE III — LA CUISINE ===================== -->
+    <section class="acte acte--ivoire" id="cuisine">
+      <div class="acte__entete reveal">
+        <p class="acte__numero">Acte III</p>
+        <h2 class="acte__titre">La cuisine<br><em>traditionnelle ne veut pas dire classique</em></h2>
+      </div>
+
+      <div class="cuisine__grille">
+        <figure class="cuisine__photo reveal-img">
+          <img src="assets/img/table-dressage-bibliotheque.jpg" alt="Table dressée, verres à vin et bibliothèque en arrière-plan" loading="lazy" width="2200" height="1466">
+          <figcaption>Dressage du soir</figcaption>
+        </figure>
+
+        <div class="cuisine__texte reveal">
+          <p class="lettrine">Ici, la bistronomie se joue sur des bases nettes : des arrivages quotidiens, des producteurs locaux choisis pour leur régularité, et une carte entièrement faite maison — des tapas aux desserts, sorbets compris.</p>
+          <p>Le reste est affaire de détours : un risotto truffé qui rencontre la burrata, un tartare de saumon qui passe par Séoul, une dorade qui cuit en feuille de bananier. Généreux dans l'assiette, précis dans l'exécution.</p>
+          <div class="cuisine__labels">
+            <p>100&nbsp;% fait maison</p>
+            <p>Arrivages quotidiens</p>
+            <p>Producteurs locaux</p>
+          </div>
+        </div>
+
+        <div class="cuisine__extraits reveal">
+          <h3>À la carte, en ce moment</h3>
+          <ul class="carte-extrait">
+            <li><span class="carte-extrait__nom">Croq' foccacia truffé</span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">15,90&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">La langoustine</span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">19,90&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Risotto truffé, burrata &amp; jambon serrano</span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">28,90&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Thon mi-cuit au sésame</span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">29,00&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Filet de bœuf français</span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">34,00&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Le Cube</span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">12,50&nbsp;€</span></li>
+          </ul>
+          <a class="btn btn--encre" href="carte.html">La carte complète</a>
+        </div>
+      </div>
+
+      <div class="cuisine__plats">
+        <div class="ph ph--32 reveal">
+          <img class="ph__c" src="assets/img/le_c.png" alt="" aria-hidden="true">
+          <p class="ph__label">Photo à venir</p>
+          <p class="ph__sujet">Le risotto truffé à la burrata</p>
+        </div>
+        <div class="ph ph--32 reveal">
+          <img class="ph__c" src="assets/img/le_c.png" alt="" aria-hidden="true">
+          <p class="ph__label">Photo à venir</p>
+          <p class="ph__sujet">La criée du jour</p>
+        </div>
+        <div class="ph ph--32 reveal">
+          <img class="ph__c" src="assets/img/le_c.png" alt="" aria-hidden="true">
+          <p class="ph__label">Photo à venir</p>
+          <p class="ph__sujet">Le Cube — dessert signature</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACTE IV — LA CAVE ===================== -->
+    <section class="acte acte--charbon" id="cave">
+      <div class="acte__entete reveal">
+        <p class="acte__numero acte__numero--rouge">Acte IV</p>
+        <h2 class="acte__titre">La cave<br><em>de la Loire aux grands crus</em></h2>
+      </div>
+
+      <div class="cave__grille">
+        <div class="cave__texte reveal">
+          <p class="lettrine">La carte des vins commence à la maison : quatre muscadets de Sèvre-et-Maine, de Ménard-Gaborit au Clisson de l'Épinay, puis remonte la Loire — Cheverny, Sancerre, Pouilly-Fumé — avant d'ouvrir sur la Bourgogne, le Rhône et le Bordelais.</p>
+          <p>Et pour les grandes occasions, la Belle Cave aligne ses flacons rétroéclairés derrière la rotonde : Chablis 1<sup>er</sup> cru de Patrick Piuze, Gevrey-Chambertin, jusqu'à l'Échezeaux Grand Cru 2008 de Cécile Tremblay.</p>
+          <p class="cave__mention">TVA et service inclus — la plupart des références au verre, en 50&nbsp;cl et en bouteille.</p>
+          <a class="btn btn--ivoire" href="carte.html#vins">La carte des vins</a>
+          <div class="ph ph--21 ph--nuit cave__ph reveal">
+            <img class="ph__c" src="assets/img/le_c.png" alt="" aria-hidden="true">
+            <p class="ph__label">Photo à venir</p>
+            <p class="ph__sujet">Les flacons de la Belle Cave</p>
+          </div>
+        </div>
+
+        <div class="cave__belle reveal">
+          <h3>La Belle Cave <span>— quelques flacons</span></h3>
+          <ul class="carte-extrait carte-extrait--nuit">
+            <li><span class="carte-extrait__nom">Chablis 1<sup>er</sup> cru « Les Forêts » 2020 <em>Patrick Piuze</em></span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">80&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Sancerre « Les Monts Damnés » 2018 <em>Dom. Delaporte</em></span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">60&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Gevrey-Chambertin 2020 <em>Dom. Pernot Père &amp; Fils</em></span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">90&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Bandol 2019 <em>Domaine Tempier</em></span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">85&nbsp;€</span></li>
+            <li><span class="carte-extrait__nom">Échezeaux Grand Cru « Du dessus » 2008 <em>Cécile Tremblay</em></span><span class="carte-extrait__filet"></span><span class="carte-extrait__prix">560&nbsp;€</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACTE V — LA TERRASSE ===================== -->
+    <section class="acte acte--blanc" id="terrasse">
+      <div class="acte__entete reveal">
+        <p class="acte__numero">Acte V</p>
+        <h2 class="acte__titre">La terrasse<br><em>le rouge, côté jour</em></h2>
+      </div>
+
+      <div class="terrasse__grille">
+        <figure class="terrasse__photo terrasse__photo--large reveal-img">
+          <img src="assets/img/terrasse-perspective.jpg" alt="La terrasse du Cambronne : nappes blanches, coussins rouges, parasols et guirlandes" loading="lazy" width="1651" height="2200">
+          <figcaption>Sous les guirlandes, dès les premiers beaux jours</figcaption>
+        </figure>
+        <div class="terrasse__texte reveal">
+          <p>Aux beaux jours, le velours passe dehors : nappes blanches, coussins rouges, parasols et guirlandes. La terrasse se glisse le long de l'Héronnière, à l'abri du flux de la place Graslin — le soleil en plus, le bruit en moins.</p>
+          <p class="terrasse__note">Réservation conseillée en terrasse, midi comme soir.</p>
+          <a class="btn btn--encre" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver</a>
+        </div>
+        <figure class="terrasse__photo terrasse__photo--détail reveal-img">
+          <img src="assets/img/terrasse-table-blanche.jpg" alt="Table nappée de blanc et coussins rouges en terrasse" loading="lazy" width="2200" height="1651">
+          <figcaption>Le dressage du midi</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== ACTE VI — INFOS ===================== -->
+    <section class="acte acte--charbon acte--infos" id="infos">
+      <div class="acte__entete reveal">
+        <p class="acte__numero acte__numero--rouge">Acte VI</p>
+        <h2 class="acte__titre">Infos pratiques<br><em>venir, réserver</em></h2>
+      </div>
+
+      <figure class="infos__photo reveal-img">
+        <img src="assets/img/tables-lumiere-jour.jpg" alt="Tables dressées dans la lumière du midi, banquette et fauteuil rouge" loading="lazy" width="2200" height="1466">
+        <figcaption>Le service du midi, côté fenêtres</figcaption>
+      </figure>
+
+      <div class="infos__grille">
+        <div class="infos__bloc reveal">
+          <h3>Horaires</h3>
+          <table class="infos__horaires">
+            <tr><th scope="row">Lundi — jeudi</th><td>12h00–14h30 · 19h00–22h30</td></tr>
+            <tr><th scope="row">Vendredi — samedi</th><td>12h00–14h30 · 19h00–23h15</td></tr>
+            <tr><th scope="row">Dimanche</th><td>12h00–14h30</td></tr>
+          </table>
+          <p class="infos__note">Ouvert 7&nbsp;j/7 — dimanche midi uniquement.</p>
+        </div>
+
+        <div class="infos__bloc reveal">
+          <h3>Adresse</h3>
+          <p class="infos__adresse">6 rue de l'Héronnière<br>44000 Nantes<br><span>angle rue Piron — quartier Graslin</span></p>
+          <a class="infos__maps" href="https://maps.google.com/?q=Le+Cambronne+Bistrot+Chic,+6+rue+de+l'Héronnière,+44000+Nantes" target="_blank" rel="noopener">Ouvrir dans Google Maps <span aria-hidden="true">→</span></a>
+          <h3 class="infos__h3-second">Parkings</h3>
+          <ul class="infos__parkings">
+            <li>Médiathèque <span>— 200 m</span></li>
+            <li>Graslin <span>— 400 m</span></li>
+            <li>Petite Hollande <span>— 500 m</span></li>
+          </ul>
+        </div>
+
+        <div class="infos__bloc infos__bloc--resa reveal">
+          <h3>Réserver</h3>
+          <p>En ligne, en quelques secondes, ou par téléphone aux heures de service.</p>
+          <a class="btn btn--rouge btn--grand" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver en ligne</a>
+          <a class="infos__tel" href="tel:+33240473642">02 40 47 36 42</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__mot reveal">
+      <p class="footer__sur">Le mot de la fin</p>
+      <p class="footer__phrase">On ne raconte pas un dîner<br>au Cambronne. <em>On y retourne.</em></p>
+      <a class="btn btn--rouge btn--grand" href="https://app.overfull.fr/booking/?key_id=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOjM5OH0.rPe6TVAcPLuRfk063mEUmEJoc5pPB_0tdmh7DfiwfVk&source=Web" target="_blank" rel="noopener">Réserver une table</a>
+    </div>
+
+    <div class="footer__bas">
+      <div class="footer__col footer__col--marque">
+        <img src="assets/img/le_c.png" alt="" width="56" height="56">
+        <p>Le Cambronne<br><span>Bistrot chic — Nantes</span></p>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <p>6 rue de l'Héronnière, 44000 Nantes</p>
+        <p><a href="tel:+33240473642">02 40 47 36 42</a></p>
+        <p>Ouvert 7 j/7</p>
+      </div>
+      <div class="footer__col">
+        <h4>Suivre</h4>
+        <p><a href="https://www.instagram.com/lecambronnebistrotchic" target="_blank" rel="noopener">Instagram</a></p>
+        <p><a href="https://www.facebook.com/lecambronne" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>La maison</h4>
+        <p><a href="https://www.lemasdesoliviers-nantes.fr" target="_blank" rel="noopener">Le Mas des Oliviers</a></p>
+        <p><a href="https://www.lemoia-restaurant.fr" target="_blank" rel="noopener">Le Moïa</a></p>
+      </div>
+    </div>
+
+    <div class="footer__mentions">
+      <p>© <span id="annee">2026</span> Le Cambronne — Bistrot chic · SAS NBK Restauration</p>
+      <p>Photographies : Fokale32 — Philippe Pierre</p>
+      <p class="footer__liens">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="cgv.html">Conditions générales</a>
+      </p>
+      <p class="footer__credit">Création <a href="https://vokumagency.com" target="_blank" rel="noopener">Vokum</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

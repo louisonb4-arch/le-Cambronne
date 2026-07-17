@@ -1,0 +1,313 @@
+/* ==========================================================================
+   LE CAMBRONNE — page carte
+   La carte se lit sur ivoire (comme un menu imprimé), les vins sur charbon.
+   ========================================================================== */
+
+.page-carte { background: var(--ivoire); }
+
+/* ---------- En-tête de carte ---------- */
+
+.carte-hero {
+  background: var(--ivoire);
+  padding: clamp(9rem, 18vh, 13rem) var(--gouttiere) clamp(2.5rem, 5vw, 4rem);
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carte-hero__sur {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--cuivre);
+  margin-bottom: 1.4rem;
+}
+
+.carte-hero__titre {
+  font-family: var(--didone);
+  font-size: clamp(3.2rem, 9vw, 6.5rem);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--encre);
+  margin-bottom: 1.6rem;
+}
+
+.carte-hero__note {
+  font-size: 0.92rem;
+  color: var(--gris-jour);
+  margin-bottom: 2.8rem;
+}
+
+.carte-hero__sommaire {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 2rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--filet-jour);
+  border-bottom: 1px solid var(--filet-jour);
+}
+
+.carte-hero__sommaire a {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--encre);
+  transition: color 0.3s;
+}
+.carte-hero__sommaire a:hover { color: var(--rouge); }
+.carte-hero__sommaire-vins { color: var(--rouge) !important; }
+.carte-hero__sommaire-vins:hover { color: var(--encre) !important; }
+
+/* Pastille végétarien */
+.veg {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.58em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--cuivre);
+  border: 1px solid currentColor;
+  padding: 0.1em 0.45em;
+  vertical-align: 0.25em;
+  border-radius: 0;
+}
+
+/* ---------- La carte ---------- */
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) var(--gouttiere) clamp(4rem, 8vw, 7rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.menu__colonne { display: flex; flex-direction: column; gap: clamp(2.5rem, 5vw, 4rem); }
+
+.menu__bloc h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-family: var(--didone);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 500;
+  line-height: 1.15;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--encre);
+  margin-bottom: 0.4rem;
+}
+
+.menu__bloc h2 span {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--rouge);
+}
+
+.menu__bloc h2 em {
+  font-size: 0.55em;
+  font-weight: 400;
+  color: var(--gris-jour);
+}
+
+.plats { list-style: none; }
+
+.plats li { border-bottom: 1px solid var(--filet-jour); }
+
+.plats__ligne {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  padding: 0.95rem 0;
+}
+
+.plats h3 {
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.plats h3 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gris-jour);
+  font-size: 0.88em;
+}
+
+.plats__filet {
+  flex: 1;
+  border-bottom: 1px dotted var(--filet-jour);
+  transform: translateY(-0.3em);
+}
+
+.plats__prix {
+  font-family: var(--didone);
+  font-size: 1.1rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Bloc signature : cadre double filet rouge */
+.menu__bloc--signature {
+  border: 1px solid var(--rouge);
+  position: relative;
+  padding: clamp(1.4rem, 2.6vw, 2.2rem);
+  background: var(--blanc);
+}
+.menu__bloc--signature::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(216, 51, 43, 0.35);
+  pointer-events: none;
+}
+.menu__bloc--signature h2 { border-color: var(--rouge); }
+
+/* ---------- Les vins ---------- */
+
+.vins {
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cpath d='M28 0L56 28 28 56 0 28z' fill='none' stroke='%23f3efe7' stroke-opacity='0.028'/%3E%3C/svg%3E"),
+    var(--charbon);
+  color: var(--ivoire);
+  padding: clamp(5rem, 10vw, 8rem) var(--gouttiere);
+}
+
+.vins__entete { max-width: 1200px; margin: 0 auto clamp(3rem, 6vw, 5rem); }
+.vins__note { margin-top: 1.6rem; font-size: 0.85rem; color: var(--gris-nuit); }
+
+.vins__grille {
+  max-width: 1200px;
+  margin: 0 auto;
+  columns: 2;
+  column-gap: clamp(2rem, 5vw, 4.5rem);
+}
+
+.vins__bloc {
+  break-inside: avoid;
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.vins__bloc h3 {
+  font-family: var(--didone);
+  font-size: 1.45rem;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--ivoire);
+  margin-bottom: 0.2rem;
+}
+
+.vins__bloc h3 em {
+  font-size: 0.6em;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--cuivre);
+}
+
+.vins__table { width: 100%; border-collapse: collapse; }
+
+.vins__table th {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gris-nuit);
+  text-align: right;
+  padding: 0.7rem 0 0.4rem 0.6rem;
+  white-space: nowrap;
+}
+.vins__table th:first-child { text-align: left; padding-left: 0; }
+
+.vins__table td {
+  font-size: 0.88rem;
+  padding: 0.55rem 0 0.55rem 0.6rem;
+  border-bottom: 1px solid var(--filet-nuit);
+  text-align: right;
+  font-family: var(--didone);
+  font-size: 0.95rem;
+  white-space: nowrap;
+  color: rgba(243, 239, 231, 0.92);
+}
+
+.vins__table td:first-child {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  text-align: left;
+  padding-left: 0;
+  white-space: normal;
+  width: 100%;
+}
+
+.vins__table td em { font-style: italic; color: var(--gris-nuit); }
+
+/* Belle Cave : cadre cuivre */
+.vins__bloc--belle {
+  border: 1px solid var(--filet-nuit);
+  background: var(--charbon-2);
+  padding: clamp(1.4rem, 2.6vw, 2.2rem);
+  position: relative;
+}
+.vins__bloc--belle::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(192, 131, 80, 0.35);
+  pointer-events: none;
+}
+.vins__bloc--belle h3 { border-color: var(--cuivre); }
+
+/* ---------- CTA final ---------- */
+
+.carte-cta {
+  background: var(--ivoire);
+  text-align: center;
+  padding: clamp(4.5rem, 9vw, 7rem) var(--gouttiere);
+}
+
+.carte-cta__phrase {
+  font-family: var(--didone);
+  font-size: clamp(1.9rem, 4.5vw, 3.2rem);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--encre);
+  margin-bottom: 2.2rem;
+}
+
+.carte-cta__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.carte-cta .hero__lien-carte { color: var(--encre); border-color: var(--filet-jour); }
+.carte-cta .hero__lien-carte:hover { color: var(--rouge); border-color: var(--rouge); }
+
+/* ---------- Footer simple ---------- */
+
+.footer--simple .footer__mentions { border-top: 0; padding-top: 2rem; padding-bottom: 2rem; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .menu { grid-template-columns: 1fr; }
+  .vins__grille { columns: 1; }
+}
+
+@media (max-width: 680px) {
+  .carte-hero { padding-top: 7.5rem; }
+  .carte-hero__sommaire { gap: 0.5rem 1.3rem; }
+  .plats__ligne { flex-wrap: wrap; }
+  .plats__filet { min-width: 2rem; }
+  .carte-cta__actions { flex-direction: column; gap: 1.6rem; }
+}
