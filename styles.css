@@ -1125,15 +1125,28 @@ figcaption {
 }
 .footer__mentions a { text-decoration: underline; text-underline-offset: 3px; }
 .footer__liens { display: flex; gap: 1.2rem; flex-wrap: wrap; }
-.footer__credit { color: var(--ivoire); opacity: 1; font-weight: 600; }
-.footer__credit a {
-  color: var(--rouge-vif);
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid var(--rouge-vif);
-  padding-bottom: 1px;
+.footer__credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  color: var(--ivoire);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
-.footer__credit a:hover { color: var(--ivoire); border-color: var(--ivoire); }
+.footer__credit a {
+  display: inline-block;
+  background: var(--rouge);
+  color: var(--blanc);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.4em 0.85em;
+  border-radius: 4px;
+  transition: background-color 0.3s var(--transition-douce), transform 0.3s var(--transition-douce);
+}
+.footer__credit a:hover { background: var(--rouge-vif); transform: translateY(-1px); }
 
 /* ==========================================================================
    Reveals au scroll — translation & clip-path uniquement, jamais de scale
