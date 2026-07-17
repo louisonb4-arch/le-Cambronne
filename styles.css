@@ -1121,12 +1121,19 @@ figcaption {
   padding: 1.4rem var(--gouttiere) 2rem;
   border-top: 1px solid rgba(250, 248, 243, 0.28);
   font-size: 0.75rem;
-  opacity: 0.85;
+  color: rgba(243, 239, 231, 0.85);
 }
 .footer__mentions a { text-decoration: underline; text-underline-offset: 3px; }
 .footer__liens { display: flex; gap: 1.2rem; flex-wrap: wrap; }
-.footer__credit { color: var(--cuivre); }
-.footer__credit a { color: var(--cuivre); }
+.footer__credit { color: var(--ivoire); opacity: 1; font-weight: 600; }
+.footer__credit a {
+  color: var(--rouge-vif);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--rouge-vif);
+  padding-bottom: 1px;
+}
+.footer__credit a:hover { color: var(--ivoire); border-color: var(--ivoire); }
 
 /* ==========================================================================
    Reveals au scroll — translation & clip-path uniquement, jamais de scale
