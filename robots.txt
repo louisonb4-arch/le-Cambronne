@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.lecambronne-bistrotchic.fr/sitemap.xml
+
+# Pas de ligne Sitemap : le sitemap de ce depot liste des URLs de
+# www.lecambronne-bistrotchic.fr alors qu'il est servi depuis un autre
+# hote. A retablir une fois le domaine bascule.
